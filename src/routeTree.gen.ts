@@ -14,8 +14,12 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BooksRouteImport } from './routes/books'
 import { Route as ChildrensBooksRouteImport } from './routes/childrens-books'
+import { Route as ComingSoonRouteImport } from './routes/coming-soon'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as BooksSlugRouteImport } from './routes/books.$slug'
 
@@ -44,6 +48,21 @@ const ChildrensBooksRoute = ChildrensBooksRouteImport.update({
   path: '/childrens-books',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ComingSoonRoute = ComingSoonRouteImport.update({
+  id: '/coming-soon',
+  path: '/coming-soon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResourcesRoute = ResourcesRouteImport.update({
   id: '/resources',
   path: '/resources',
@@ -52,6 +71,11 @@ const ResourcesRoute = ResourcesRouteImport.update({
 const StoriesRoute = StoriesRouteImport.update({
   id: '/stories',
   path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
@@ -71,8 +95,12 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/books': typeof BooksRouteWithChildren
   '/childrens-books': typeof ChildrensBooksRoute
+  '/coming-soon': typeof ComingSoonRoute
+  '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/books/$slug': typeof BooksSlugRoute
 }
@@ -82,8 +110,12 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRouteWithChildren
   '/books': typeof BooksRouteWithChildren
   '/childrens-books': typeof ChildrensBooksRoute
+  '/coming-soon': typeof ComingSoonRoute
+  '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/books/$slug': typeof BooksSlugRoute
 }
@@ -94,8 +126,12 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/books': typeof BooksRouteWithChildren
   '/childrens-books': typeof ChildrensBooksRoute
+  '/coming-soon': typeof ComingSoonRoute
+  '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/books/$slug': typeof BooksSlugRoute
 }
@@ -107,8 +143,12 @@ export interface FileRouteTypes {
     | '/blog'
     | '/books'
     | '/childrens-books'
+    | '/coming-soon'
+    | '/contact'
+    | '/privacy'
     | '/resources'
     | '/stories'
+    | '/terms'
     | '/blog/$slug'
     | '/books/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -118,8 +158,12 @@ export interface FileRouteTypes {
     | '/blog'
     | '/books'
     | '/childrens-books'
+    | '/coming-soon'
+    | '/contact'
+    | '/privacy'
     | '/resources'
     | '/stories'
+    | '/terms'
     | '/blog/$slug'
     | '/books/$slug'
   id:
@@ -129,8 +173,12 @@ export interface FileRouteTypes {
     | '/blog'
     | '/books'
     | '/childrens-books'
+    | '/coming-soon'
+    | '/contact'
+    | '/privacy'
     | '/resources'
     | '/stories'
+    | '/terms'
     | '/blog/$slug'
     | '/books/$slug'
   fileRoutesById: FileRoutesById
@@ -141,8 +189,12 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   BooksRoute: typeof BooksRouteWithChildren
   ChildrensBooksRoute: typeof ChildrensBooksRoute
+  ComingSoonRoute: typeof ComingSoonRoute
+  ContactRoute: typeof ContactRoute
+  PrivacyRoute: typeof PrivacyRoute
   ResourcesRoute: typeof ResourcesRoute
   StoriesRoute: typeof StoriesRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -182,6 +234,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChildrensBooksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/coming-soon': {
+      id: '/coming-soon'
+      path: '/coming-soon'
+      fullPath: '/coming-soon'
+      preLoaderRoute: typeof ComingSoonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/resources': {
       id: '/resources'
       path: '/resources'
@@ -194,6 +267,13 @@ declare module '@tanstack/react-router' {
       path: '/stories'
       fullPath: '/stories'
       preLoaderRoute: typeof StoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/$slug': {
@@ -239,8 +319,12 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   BooksRoute: BooksRouteWithChildren,
   ChildrensBooksRoute: ChildrensBooksRoute,
+  ComingSoonRoute: ComingSoonRoute,
+  ContactRoute: ContactRoute,
+  PrivacyRoute: PrivacyRoute,
   ResourcesRoute: ResourcesRoute,
   StoriesRoute: StoriesRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
