@@ -12,8 +12,12 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // Outside Lovable's own hosting (e.g. Netlify CI) build for Netlify Functions so
+  // Outside Lovable's own hosting (e.g. Vercel/Netlify CI) build a server target so
   // server-rendered routes work instead of 404ing. Lovable's platform build pins its
   // own preset and ignores this.
-  nitro: { preset: process.env["NITRO_PRESET"] ?? "netlify" },
+  nitro: {
+    preset:
+      process.env["NITRO_PRESET"] ??
+      (process.env["VERCEL"] ? "vercel" : "netlify"),
+  },
 });
