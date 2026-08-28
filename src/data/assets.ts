@@ -1,9 +1,9 @@
-import logo from "@/assets/logo.jpg.asset.json";
-import littleBear from "@/assets/little-bear-cover.png.asset.json";
-import littleBearAlt from "@/assets/little-bear-alt.jpg.asset.json";
-import roadToSuccess from "@/assets/road-to-success.png.asset.json";
-import dontRush from "@/assets/dont-rush.png.asset.json";
-import bearSunset from "@/assets/bear-sunset.png.asset.json";
+import logo from "@/assets/logo.jpg";
+import littleBear from "@/assets/little-bear-cover.jpg";
+import littleBearAlt from "@/assets/little-bear-alt.jpg";
+import roadToSuccess from "@/assets/road-to-success.jpg";
+import dontRush from "@/assets/dont-rush.jpg";
+import bearSunset from "@/assets/bear-sunset.jpg";
 import heroBooks from "@/assets/hero-books.jpg";
 import aboutStudio from "@/assets/about-studio.jpg";
 import coverBunny from "@/assets/cover-bunny.jpg";
@@ -13,12 +13,12 @@ import articleWriting from "@/assets/article-writing.jpg";
 import articleShelf from "@/assets/article-shelf.jpg";
 
 export const img = {
-  logo: logo.url,
-  littleBear: littleBear.url,
-  littleBearAlt: littleBearAlt.url,
-  roadToSuccess: roadToSuccess.url,
-  dontRush: dontRush.url,
-  bearSunset: bearSunset.url,
+  logo,
+  littleBear,
+  littleBearAlt,
+  roadToSuccess,
+  dontRush,
+  bearSunset,
   heroBooks,
   aboutStudio,
   coverBunny,
