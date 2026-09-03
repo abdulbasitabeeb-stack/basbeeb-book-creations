@@ -11,6 +11,7 @@ import coverFox from "@/assets/cover-fox.jpg";
 import articleReading from "@/assets/article-reading.jpg";
 import articleWriting from "@/assets/article-writing.jpg";
 import articleShelf from "@/assets/article-shelf.jpg";
+import firstHundred from "@/assets/first-100-dollars.jpg";
 
 export const img = {
   logo,
@@ -26,4 +27,5 @@ export const img = {
   articleReading,
   articleWriting,
   articleShelf,
+  firstHundred,
 };

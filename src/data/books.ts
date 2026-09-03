@@ -30,6 +30,33 @@ export interface Book {
  */
 export const books: Book[] = [
   {
+    title: "How To Make Your First $100",
+    slug: "how-to-make-your-first-100",
+    cover: img.firstHundred,
+    coverAlt:
+      "Book cover of How To Make Your First $100 by BASBEEB, gold typography over a city skyline with cash and a notebook",
+    description:
+      "Simple steps, real strategies, real results — a beginner's path to your first earned $100.",
+    longDescription: [
+      "Most money advice starts too far ahead. This guide starts at zero: no audience, no capital, no experience — just a plan you can follow this week.",
+      "Start, learn, earn. Each chapter gives you one action to take and one skill to build, so the first hundred stops being theory and becomes a receipt.",
+    ],
+    discover: [
+      "Beginner-friendly ways to earn with skills you already have",
+      "How to pick one offer and stop switching ideas",
+      "Simple pricing, outreach and delivery scripts",
+      "A weekly plan to reach your first $100",
+    ],
+    audience:
+      "Beginners, students, and side-hustlers who want a practical, proven, no-fluff starting point.",
+    category: "Guides",
+    author: "BASBEEB",
+    publicationDate: "2026-09-01",
+    purchaseUrl: "#",
+    featured: true,
+    comingSoon: false,
+  },
+  {
     title: "The Road to Success I Never Expected",
     slug: "the-road-to-success-i-never-expected",
     cover: img.roadToSuccess,
