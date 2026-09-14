@@ -30,6 +30,34 @@ export interface Book {
  */
 export const books: Book[] = [
   {
+    title: "The Strange Little Door",
+    slug: "the-strange-little-door",
+    cover: img.strangeLittleDoor,
+    coverAlt:
+      "Children's book cover of The Strange Little Door by BASBEEB, a curly-haired girl in a yellow dress discovering a small blue door in a mossy tree",
+    description:
+      "A sunlit forest, a curious girl, and one small blue door that shouldn't be there.",
+    longDescription: [
+      "Amara only meant to follow the stream. But there, in the roots of the oldest tree in the wood, is a little blue door with a golden star — and it is exactly her size.",
+      "A bright, warm-hearted adventure about curiosity, courage, and the wonderful things that happen when you knock instead of walking away.",
+    ],
+    discover: [
+      "A magical read-aloud adventure full of wonder",
+      "Gentle encouragement to be curious and brave",
+      "Lush, sunlit forest illustrations to explore",
+      "Questions for children after the final page",
+    ],
+    audience:
+      "Children aged 4–8 who love magic, forests, and stories that end with a door left open.",
+    category: "Children's Books",
+    author: "BASBEEB",
+    ageRange: "Ages 4–8",
+    publicationDate: "2026-09-14",
+    purchaseUrl: "#",
+    featured: true,
+    comingSoon: false,
+  },
+  {
     title: "How To Make Your First $100",
     slug: "how-to-make-your-first-100",
     cover: img.firstHundred,
