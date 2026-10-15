@@ -85,6 +85,24 @@ function StoriesPage() {
       </section>
 
       <section className="section-y">
+        <div className="shell grid items-center gap-12 md:grid-cols-[0.6fr_1fr]">
+          <video
+            src="/videos/daily-quote.mp4"
+            poster="/videos/daily-quote.jpg"
+            controls
+            playsInline
+            preload="none"
+            className="mx-auto aspect-[9/16] w-full max-w-xs rounded-2xl bg-secondary shadow-soft"
+          />
+          <div>
+            <p className="eyebrow">Daily inspiration</p>
+            <h2 className="display-2 mt-4">A quiet thought to start your morning</h2>
+            <p className="lede mt-6">Short, honest words to carry into the day.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-y">
         <div className="shell">
           <h2 className="display-2 max-w-2xl">Short reads from the journal</h2>
           <div className="mt-12 grid gap-12 md:grid-cols-3">

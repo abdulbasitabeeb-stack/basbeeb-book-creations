@@ -141,6 +141,33 @@ function AboutPage() {
       </section>
 
       <section className="section-y">
+        <div className="shell grid items-center gap-14 lg:grid-cols-2">
+          <Reveal>
+            <img
+              src={img.brandPoster}
+              alt="BASBEEB Books poster: Inspiring minds, changing lives, one book at a time"
+              width={1080}
+              height={1350}
+              loading="lazy"
+              className="w-full rounded-2xl object-cover shadow-soft"
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="eyebrow">Watch our story</p>
+            <h2 className="display-2 mt-4">Books that inspire, educate and transform.</h2>
+            <video
+              src="/videos/presenter-ad.mp4"
+              poster="/videos/presenter-ad.jpg"
+              controls
+              playsInline
+              preload="none"
+              className="mt-8 aspect-video w-full rounded-2xl bg-secondary shadow-soft"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section-y">
         <div className="shell">
           <Newsletter />
         </div>

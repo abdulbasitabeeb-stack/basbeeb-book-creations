@@ -13,6 +13,9 @@ import articleWriting from "@/assets/article-writing.jpg";
 import articleShelf from "@/assets/article-shelf.jpg";
 import firstHundred from "@/assets/first-100-dollars.jpg";
 import strangeLittleDoor from "@/assets/strange-little-door.jpg";
+import buildBeforeYouBelieve from "@/assets/build-before-you-believe.jpg";
+import brandPoster from "@/assets/brand-poster.jpg";
+
 
 export const img = {
   logo,
@@ -30,4 +33,6 @@ export const img = {
   articleShelf,
   firstHundred,
   strangeLittleDoor,
+  buildBeforeYouBelieve,
+  brandPoster,
 };
