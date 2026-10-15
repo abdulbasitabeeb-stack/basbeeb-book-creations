@@ -163,6 +163,21 @@ function Home() {
         </div>
       </section>
 
+      {/* Promo video */}
+      <section className="section-y">
+        <div className="shell">
+          <SectionHeading eyebrow="Watch" title="Inside the BASBEEB BOOK world" />
+          <video
+            src="/videos/basbeeb-promo.mp4"
+            poster="/videos/basbeeb-promo.jpg"
+            controls
+            playsInline
+            preload="none"
+            className="mt-12 aspect-video w-full rounded-2xl bg-secondary shadow-lift"
+          />
+        </div>
+      </section>
+
       {/* About strip */}
       <section className="section-y">
         <div className="shell grid items-center gap-14 lg:grid-cols-2">

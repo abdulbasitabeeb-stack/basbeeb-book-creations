@@ -30,6 +30,32 @@ export interface Book {
  */
 export const books: Book[] = [
   {
+    title: "Build Before You Believe",
+    slug: "build-before-you-believe",
+    cover: img.buildBeforeYouBelieve,
+    coverAlt:
+      "Ebook cover of Build Before You Believe by BASBEEB BOOK, a young man in a suit with arms crossed before a mountain sunrise",
+    description:
+      "How to start before you feel ready and become the person you imagine.",
+    longDescription: [
+      "Most people wait to feel confident before they begin. This book argues the opposite: confidence is built by the work, not before it.",
+      "Practical, honest and motivating — a guide to taking the first step today, staying consistent, and growing into the person you picture.",
+    ],
+    discover: [
+      "Why waiting to feel ready keeps you stuck",
+      "Simple ways to take action before confidence arrives",
+      "Habits that build belief through progress",
+      "A clear mindset for personal growth and success",
+    ],
+    audience: "Young adults and anyone ready to stop waiting and start building.",
+    category: "Ebooks",
+    author: "BASBEEB",
+    publicationDate: "2026-10-15",
+    purchaseUrl: "#",
+    featured: true,
+    comingSoon: false,
+  },
+  {
     title: "The Strange Little Door",
     slug: "the-strange-little-door",
     cover: img.strangeLittleDoor,
